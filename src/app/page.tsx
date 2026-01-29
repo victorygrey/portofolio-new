@@ -182,7 +182,7 @@ export default function PortfolioPage() {
               <div className="absolute inset-0 bg-purple-500/20 blur-3xl group-hover:bg-purple-500/30 transition-colors" />
               <div className="relative h-full w-full rounded-2xl overflow-hidden glass border border-white/10 group-hover:border-purple-500/50 transition-all duration-500">
                 <img 
-                  src="https://drive.google.com/thumbnail?id=1Y-p_30V8OitLpREhN31E2X_C4-9721-y&sz=w1000" 
+                  src="/images/profile.jpeg" 
                   alt={portfolioData.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
