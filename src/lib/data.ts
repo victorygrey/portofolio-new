@@ -25,6 +25,7 @@ export const portfolioData = {
       description:
         "A web application for service management with a role-based system (Admin & User). Comprehensive features include a statistics dashboard, customer data management, transaction input, transaction history, and reports with Excel/PDF export.",
       type: "Web App",
+      category: "Web",
       tags: ["HTML", "CSS", "JavaScript"],
       image:
         "https://drive.google.com/file/d/10hZ9LQt3Wmc8Vzsy5Sp5oDpj3qnHH-PF/preview",
@@ -34,11 +35,74 @@ export const portfolioData = {
       title: "Toko Kopi (Web App)",
       description:
         "This project is a modern and responsive landing page for a coffee shop (named 'Kopi Kenangan Senja'). The site includes interactive features such as a shopping cart, product gallery, and contact form.",
-      type: "Web Application",
+      type: "Web App",
+      category: "Web",
       tags: ["HTML", "CSS", "JavaScript"],
       image:
         "https://drive.google.com/file/d/1xE_bRN9kQ6-VH6L27lFB2CFWsODrzayE/preview",
       link: "https://victorygrey.github.io/template-coffee-shop/",
+    },
+    {
+      title: "Desain Booklet Company Profile",
+      description:
+        "Koleksi desain booklet profesional untuk company profile dan presentasi bisnis yang dirancang dengan layout yang elegan dan informatif.",
+      type: "Canva Design",
+      category: "Design",
+      tags: ["Canva", "Booklet", "Print Design", "Branding"],
+      image: "/images/contoh_booklet/booklet_01.jpeg",
+      images: [
+        "/images/contoh_booklet/booklet_01.jpeg",
+        "/images/contoh_booklet/booklet_02.jpeg",
+        "/images/contoh_booklet/booklet_03.jpeg",
+        "/images/contoh_booklet/booklet_04.jpeg",
+        "/images/contoh_booklet/booklet_05.jpeg",
+        "/images/contoh_booklet/booklet_06.jpeg",
+        "/images/contoh_booklet/booklet_07.jpeg",
+        "/images/contoh_booklet/booklet_08.jpeg",
+        "/images/contoh_booklet/booklet_09.jpeg",
+        "/images/contoh_booklet/booklet_10.jpeg",
+        "/images/contoh_booklet/booklet_11.jpeg",
+        "/images/contoh_booklet/booklet_12.jpeg",
+      ],
+    },
+    {
+      title: "Desain Brosur Promosi",
+      description:
+        "Kumpulan desain brosur promosi modern dan informatif untuk berbagai kebutuhan promosi bisnis dan pengumuman acara.",
+      type: "Canva Design",
+      category: "Design",
+      tags: ["Canva", "Brosur", "Marketing", "Graphic Design"],
+      image: "/images/contoh_brosur/brosur_01.jpg",
+      images: [
+        "/images/contoh_brosur/brosur_01.jpg",
+        "/images/contoh_brosur/brosur_02.jpg",
+        "/images/contoh_brosur/brosur_03.jpg",
+        "/images/contoh_brosur/brosur_04.jpg",
+        "/images/contoh_brosur/brosur_05.jpg",
+      ],
+    },
+    {
+      title: "Desain Spanduk & Banner",
+      description:
+        "Desain banner dan spanduk visual menarik untuk promosi outdoor maupun event indoor.",
+      type: "Canva Design",
+      category: "Design",
+      tags: ["Canva", "Banner", "Spanduk", "Outdoor"],
+      image: "/images/contoh_banner/banner_01.jpeg",
+      images: ["/images/contoh_banner/banner_01.jpeg"],
+    },
+    {
+      title: "Desain Daftar Menu",
+      description:
+        "Desain daftar menu makanan dan minuman estetik yang menarik minat pelanggan untuk usaha kuliner.",
+      type: "Canva Design",
+      category: "Design",
+      tags: ["Canva", "Menu", "Culinary", "Layout"],
+      image: "/images/contoh_menu/menu_01.jpeg",
+      images: [
+        "/images/contoh_menu/menu_01.jpeg",
+        "/images/contoh_menu/menu_02.jpeg",
+      ],
     },
   ],
   experience: [
@@ -59,28 +123,7 @@ export const portfolioData = {
     {
       company: "PT. Dago Wisata",
       role: "Staff IT",
-      period: "September 2022 - Juni 2023",
-      description:
-        "Mengelola infrastruktur IT untuk operasional travel Haji dan Umroh.",
-    },
-    {
-      company: "Operator Warnet De Angel Net",
-      role: "Operator",
-      period: "November 2021 - Mei 2022",
-      description:
-        "Mengoperasikan perangkat komputer dan melayani pelanggan dengan standar pelayanan yang baik.",
-    },
-    {
-      company: "Penjaga Stand Teh Poci",
-      role: "Penjaga Stand",
-      period: "Juli 2020 - Januari 2021",
-      description:
-        "Melakukan pelayanan penjualan dan pengelolaan stok di stand teh poci.",
-    },
-    {
-      company: "PT. Dago Wisata",
-      role: "Staff IT",
-      period: "Agustus 2019 - April 2020",
+      period: "Agustus 2019 - Juni 2023",
       description:
         "Membantu dalam pemeliharaan sistem komputer dan jaringan kantor.",
     },
