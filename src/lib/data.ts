@@ -28,7 +28,7 @@ export const portfolioData = {
       category: "Web",
       tags: ["HTML", "CSS", "JavaScript"],
       image:
-        "https://drive.google.com/file/d/10hZ9LQt3Wmc8Vzsy5Sp5oDpj3qnHH-PF/preview",
+        "/images/contoh_project/project_02.png",
       link: "https://victorygrey.github.io/web-app-manajemen-layanan/",
     },
     {
@@ -39,7 +39,7 @@ export const portfolioData = {
       category: "Web",
       tags: ["HTML", "CSS", "JavaScript"],
       image:
-        "https://drive.google.com/file/d/1xE_bRN9kQ6-VH6L27lFB2CFWsODrzayE/preview",
+        "/images/contoh_project/project_03.png",
       link: "https://victorygrey.github.io/template-coffee-shop/",
     },
     {

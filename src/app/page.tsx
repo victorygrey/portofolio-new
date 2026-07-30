@@ -302,14 +302,11 @@ export default function PortfolioPage() {
                             </div>
                           </>
                         ) : (
-                          <>
-                            <div className="absolute inset-0 z-10" />
-                            <iframe 
-                              src={project.image} 
-                              className="w-[110%] h-[110%] -mt-[5%] -ml-[5%] border-none"
-                              style={{ pointerEvents: 'none' }}
-                            ></iframe>
-                          </>
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
                         )}
                       </div>
 
