@@ -121,7 +121,7 @@ export const portfolioData = {
       type: "Web App",
       category: "Web",
       tags: ["Javascript", "Web", "CSS", "HTML"],
-      image: "/images/contoh_project/project_04.png",
+      image: "/images/contoh_project/project_05.png",
       images: [
         "/images/contoh_project/project_04.png",
         "/images/contoh_project/project_05.png",
