@@ -111,7 +111,8 @@ export const portfolioData = {
       type: "Web App",
       category: "Web",
       tags: ["Python", "Web", "Scrap", "HTML"],
-      image: "/images/contoh_project/project_01.png"
+      image: "/images/contoh_project/project_01.png",
+      link: "https://github.com/victorygrey/scraping-toko-tokopedia"
     }
   ],
   experience: [
