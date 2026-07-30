@@ -104,6 +104,15 @@ export const portfolioData = {
         "/images/contoh_menu/menu_02.jpeg",
       ],
     },
+    {
+            title: "Scrapping Data",
+      description:
+        "Pengambilan data bertujuan untuk pembelajaran materi kuliah",
+      type: "Web App",
+      category: "Web",
+      tags: ["Python", "Web", "Scrap", "HTML"],
+      image: "/images/contoh_project/project_01.png"
+    }
   ],
   experience: [
     {
