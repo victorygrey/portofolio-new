@@ -105,7 +105,7 @@ export const portfolioData = {
       ],
     },
     {
-            title: "Scrapping Data",
+      title: "Scrapping Data",
       description:
         "Pengambilan data bertujuan untuk pembelajaran materi kuliah",
       type: "Web App",
@@ -113,6 +113,21 @@ export const portfolioData = {
       tags: ["Python", "Web", "Scrap", "HTML"],
       image: "/images/contoh_project/project_01.png",
       link: "https://github.com/victorygrey/scraping-toko-tokopedia"
+    },
+    {
+      title: "Snake Game",
+      description:
+        "Game ular klasik yang dibuat menjadi lebih modern menggunakan Javascript",
+      type: "Web App",
+      category: "Web",
+      tags: ["Javascript", "Web", "CSS", "HTML"],
+      image: "/images/contoh_project/project_04.png",
+      images: [
+        "/images/contoh_project/project_04.png",
+        "/images/contoh_project/project_05.png",
+        "/images/contoh_project/project_06.png",
+      ],
+      link: "https://victorygrey.github.io/snake-game/"
     }
   ],
   experience: [
