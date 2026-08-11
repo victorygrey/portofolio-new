@@ -128,6 +128,15 @@ export const portfolioData = {
         "/images/contoh_project/project_06.png",
       ],
       link: "https://victorygrey.github.io/snake-game/"
+    },{
+      title: "Inventory Management",
+      description:
+        "Sistem manajemen inventaris untuk memantau dan mengelola stok barang secara efisien",
+      type: "Web App",
+      category: "Web",
+      tags: ["Web", "Database", "React"],
+      image: "/images/contoh_project/project_07.png",
+      link: "https://inventory-management-navy-theta.vercel.app/"
     }
   ],
   experience: [
