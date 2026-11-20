@@ -1,14 +1,41 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Instrument_Serif, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
+  display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Muhamad Faizal Hamzah Sudiro | Web & Mobile Specialist",
-  description: "Senior Web and Mobile Developer specializing in React, Next.js, and React Native. Explore my projects and professional journey.",
-  keywords: ["Web Developer", "Mobile Developer", "React Native", "Next.js", "Portfolio", "Software Engineer"],
-  authors: [{ name: "Faizal Hamzah" }],
+  title: "Muhamad Faizal Hamzah Sudiro — Web & Mobile Developer",
+  description:
+    "Portfolio of Muhamad Faizal Hamzah Sudiro, a Web & Mobile Developer based in Bandung specializing in modern web applications, Python automation, and visual design.",
+  keywords: [
+    "Web Developer",
+    "Mobile Developer",
+    "React Native",
+    "Next.js",
+    "Portfolio",
+    "Software Engineer",
+    "Bandung",
+  ],
+  authors: [{ name: "Muhamad Faizal Hamzah Sudiro" }],
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png" },
@@ -19,9 +46,10 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#F5F2EB",
 };
 
 export default function RootLayout({
@@ -30,8 +58,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
+    <html
+      lang="en"
+      className={`${instrumentSerif.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} scroll-smooth`}
+    >
+      <body className="font-sans antialiased bg-[var(--paper)] text-[var(--ink)] selection:bg-[#B8432E]/15 selection:text-[var(--ink)]">
         {children}
       </body>
     </html>

@@ -1,8 +1,55 @@
-export const portfolioData = {
+export interface SkillItem {
+  name: string;
+  category: string;
+}
+
+export interface ProjectItem {
+  title: string;
+  description: string;
+  type: string;
+  category: "Web" | "Design";
+  tags: string[];
+  image: string;
+  images?: string[];
+  link?: string;
+}
+
+export interface ExperienceItem {
+  company: string;
+  role: string;
+  period: string;
+  description: string;
+}
+
+export interface EducationItem {
+  school: string;
+  degree: string;
+  year: string;
+}
+
+export interface PortfolioData {
+  name: string;
+  shortName: string;
+  role: string;
+  location: string;
+  github: string;
+  intro: string;
+  email: string;
+  whatsapp: string;
+  skills: SkillItem[];
+  projects: ProjectItem[];
+  experience: ExperienceItem[];
+  education: EducationItem[];
+}
+
+export const portfolioData: PortfolioData = {
   name: "Muhamad Faizal Hamzah Sudiro",
+  shortName: "Faizal Hamzah",
   role: "Web & Mobile Developer",
+  location: "Bandung, Indonesia",
+  github: "https://github.com/victorygrey",
   intro:
-    "I am a developer with a strong focus on website projects, Python programming, and desktop application development using Java. I enjoy building modern, responsive websites, automating tasks or data processing with Python, and creating efficient and user-friendly desktop applications with Java. I have always been passionate about learning new technologies and solving problems through programming.",
+    "I build responsive web applications, Python data workflows, and practical Java desktop tools—grounded in a hands-on background in Computer & Network Engineering (TKJ) and visual print design.",
   email: "muhfaizalhamzah@gmail.com",
   whatsapp: "62895385759496",
   skills: [
@@ -21,32 +68,65 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "Sistem Manajemen Layanan (Web App)",
+      title: "Sistem Manajemen Layanan",
       description:
-        "A web application for service management with a role-based system (Admin & User). Comprehensive features include a statistics dashboard, customer data management, transaction input, transaction history, and reports with Excel/PDF export.",
+        "Role-based service management web application (Admin & User) featuring a statistics dashboard, customer directory, transaction input, history tracking, and Excel/PDF report exports.",
       type: "Web App",
       category: "Web",
       tags: ["HTML", "CSS", "JavaScript"],
-      image:
-        "/images/contoh_project/project_02.png",
+      image: "/images/contoh_project/project_02.png",
       link: "https://victorygrey.github.io/web-app-manajemen-layanan/",
     },
     {
-      title: "Toko Kopi (Web App)",
+      title: "Inventory Management",
       description:
-        "This project is a modern and responsive landing page for a coffee shop (named 'Kopi Kenangan Senja'). The site includes interactive features such as a shopping cart, product gallery, and contact form.",
+        "Sistem manajemen inventaris untuk memantau dan mengelola stok barang secara efisien dengan antarmuka berbasis React dan integrasi database.",
+      type: "Web App",
+      category: "Web",
+      tags: ["React", "Web", "Database"],
+      image: "/images/contoh_project/project_07.png",
+      link: "https://inventory-management-navy-theta.vercel.app/",
+    },
+    {
+      title: "Kopi Kenangan Senja",
+      description:
+        "Responsive landing page for a local coffee shop with an interactive shopping cart, curated product gallery, and direct customer contact flow.",
       type: "Web App",
       category: "Web",
       tags: ["HTML", "CSS", "JavaScript"],
-      image:
-        "/images/contoh_project/project_03.png",
+      image: "/images/contoh_project/project_03.png",
       link: "https://victorygrey.github.io/template-coffee-shop/",
+    },
+    {
+      title: "Snake Game",
+      description:
+        "Game ular klasik yang diinterpretasikan ulang secara modern menggunakan JavaScript, HTML, dan CSS.",
+      type: "Web App",
+      category: "Web",
+      tags: ["JavaScript", "HTML", "CSS"],
+      image: "/images/contoh_project/project_05.png",
+      images: [
+        "/images/contoh_project/project_04.png",
+        "/images/contoh_project/project_05.png",
+        "/images/contoh_project/project_06.png",
+      ],
+      link: "https://victorygrey.github.io/snake-game/",
+    },
+    {
+      title: "Tokopedia Store Scraper",
+      description:
+        "Skrip pengambilan dan ekstraksi data toko berbasis Python untuk kebutuhan pembelajaran materi kuliah dan pengolahan data.",
+      type: "Python / Web",
+      category: "Web",
+      tags: ["Python", "Scraping", "HTML"],
+      image: "/images/contoh_project/project_01.png",
+      link: "https://github.com/victorygrey/scraping-toko-tokopedia",
     },
     {
       title: "Desain Booklet Company Profile",
       description:
-        "Koleksi desain booklet profesional untuk company profile dan presentasi bisnis yang dirancang dengan layout yang elegan dan informatif.",
-      type: "Canva Design",
+        "Koleksi desain booklet profesional untuk company profile dan presentasi bisnis yang dirancang dengan layout yang rapi, terstruktur, dan informatif.",
+      type: "Print & Editorial",
       category: "Design",
       tags: ["Canva", "Booklet", "Print Design", "Branding"],
       image: "/images/contoh_booklet/booklet_01.jpeg",
@@ -69,7 +149,7 @@ export const portfolioData = {
       title: "Desain Brosur Promosi",
       description:
         "Kumpulan desain brosur promosi modern dan informatif untuk berbagai kebutuhan promosi bisnis dan pengumuman acara.",
-      type: "Canva Design",
+      type: "Marketing Collateral",
       category: "Design",
       tags: ["Canva", "Brosur", "Marketing", "Graphic Design"],
       image: "/images/contoh_brosur/brosur_01.jpg",
@@ -82,20 +162,10 @@ export const portfolioData = {
       ],
     },
     {
-      title: "Desain Spanduk & Banner",
-      description:
-        "Desain banner dan spanduk visual menarik untuk promosi outdoor maupun event indoor.",
-      type: "Canva Design",
-      category: "Design",
-      tags: ["Canva", "Banner", "Spanduk", "Outdoor"],
-      image: "/images/contoh_banner/banner_01.jpeg",
-      images: ["/images/contoh_banner/banner_01.jpeg"],
-    },
-    {
       title: "Desain Daftar Menu",
       description:
-        "Desain daftar menu makanan dan minuman estetik yang menarik minat pelanggan untuk usaha kuliner.",
-      type: "Canva Design",
+        "Desain daftar menu makanan dan minuman yang bersih dan mudah dibaca untuk kebutuhan usaha kuliner.",
+      type: "Culinary Print",
       category: "Design",
       tags: ["Canva", "Menu", "Culinary", "Layout"],
       image: "/images/contoh_menu/menu_01.jpeg",
@@ -105,75 +175,51 @@ export const portfolioData = {
       ],
     },
     {
-      title: "Scrapping Data",
+      title: "Desain Spanduk & Banner",
       description:
-        "Pengambilan data bertujuan untuk pembelajaran materi kuliah",
-      type: "Web App",
-      category: "Web",
-      tags: ["Python", "Web", "Scrap", "HTML"],
-      image: "/images/contoh_project/project_01.png",
-      link: "https://github.com/victorygrey/scraping-toko-tokopedia"
+        "Desain banner dan spanduk visual untuk kebutuhan promosi outdoor maupun acara indoor.",
+      type: "Outdoor Media",
+      category: "Design",
+      tags: ["Canva", "Banner", "Spanduk", "Outdoor"],
+      image: "/images/contoh_banner/banner_01.jpeg",
+      images: ["/images/contoh_banner/banner_01.jpeg"],
     },
-    {
-      title: "Snake Game",
-      description:
-        "Game ular klasik yang dibuat menjadi lebih modern menggunakan Javascript",
-      type: "Web App",
-      category: "Web",
-      tags: ["Javascript", "Web", "CSS", "HTML"],
-      image: "/images/contoh_project/project_05.png",
-      images: [
-        "/images/contoh_project/project_04.png",
-        "/images/contoh_project/project_05.png",
-        "/images/contoh_project/project_06.png",
-      ],
-      link: "https://victorygrey.github.io/snake-game/"
-    },{
-      title: "Inventory Management",
-      description:
-        "Sistem manajemen inventaris untuk memantau dan mengelola stok barang secara efisien",
-      type: "Web App",
-      category: "Web",
-      tags: ["Web", "Database", "React"],
-      image: "/images/contoh_project/project_07.png",
-      link: "https://inventory-management-navy-theta.vercel.app/"
-    }
   ],
   experience: [
     {
       company: "CV. Dawis Qolbu Group",
       role: "Staff",
-      period: "Desember 2024 - Oktober 2025",
+      period: "Des 2024 — Okt 2025",
       description:
         "Bertanggung jawab dalam administrasi dan operasional harian perusahaan.",
     },
     {
       company: "CV. Cipta Wahana Teknik",
       role: "Staff",
-      period: "Juni 2023 - Desember 2024",
+      period: "Jun 2023 — Des 2024",
       description:
         "Terlibat dalam administrasi proyek kontraktor lapangan dan rehabilitasi gedung kantoran.",
     },
     {
       company: "PT. Dago Wisata",
       role: "Staff IT",
-      period: "Agustus 2019 - Juni 2023",
+      period: "Agu 2019 — Jun 2023",
       description:
-        "Membantu dalam pemeliharaan sistem komputer dan jaringan kantor.",
+        "Membantu dalam pemeliharaan sistem komputer, perangkat lunak, dan jaringan kantor.",
     },
     {
       company: "CV. Media Graha Computer",
       role: "Teknisi (PKL)",
-      period: "Januari 2016 - Maret 2016",
+      period: "Jan 2016 — Mar 2016",
       description:
-        "Melakukan troubleshooting dan perbaikan perangkat laptop/notebook.",
+        "Melakukan troubleshooting dan perbaikan perangkat keras laptop/notebook.",
     },
   ],
   education: [
     {
       school: "STMIK LPKIA",
       degree: "S1 Teknik Informatika",
-      year: "2023 - 2025",
+      year: "2023 — 2025",
     },
     {
       school: "SMK Negeri 1 Purwokerto",
