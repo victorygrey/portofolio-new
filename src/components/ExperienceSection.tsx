@@ -21,7 +21,7 @@ export function ExperienceSection() {
 
         {/* Work Experience Ledger */}
         <div className="mb-20">
-          <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--ink-muted)] pb-4 border-b border-[var(--ink)]">
+          <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--ink-muted)] pb-4 border-b border-[var(--rule-strong)]">
             Work History
           </h3>
           <div className="divide-y divide-[var(--rule)]">
@@ -32,7 +32,7 @@ export function ExperienceSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.35, delay: index * 0.04 }}
-                className="py-7 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-8 items-baseline hover:bg-[var(--surface)]/55 transition-colors px-2 -mx-2"
+                className="py-7 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-8 items-baseline hover:bg-[var(--surface)]/75 transition-colors px-2 -mx-2"
               >
                 <div className="md:col-span-3 font-mono text-xs text-[var(--ink-subtle)]">
                   {exp.period}
@@ -55,7 +55,7 @@ export function ExperienceSection() {
 
         {/* Education Ledger */}
         <div>
-          <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--ink-muted)] pb-4 border-b border-[var(--ink)]">
+          <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--ink-muted)] pb-4 border-b border-[var(--rule-strong)]">
             Education
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:gap-px bg-[var(--rule)] border-b border-[var(--rule)]">

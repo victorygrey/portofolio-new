@@ -69,7 +69,7 @@ export function Navbar() {
             href={`https://wa.me/${portfolioData.whatsapp}`}
             target="_blank"
             rel="noreferrer"
-            className="px-4 py-2 text-xs font-mono uppercase tracking-[0.12em] bg-[var(--ink)] text-[var(--paper)] rounded-full hover:bg-[var(--accent)] transition-colors"
+            className="px-4 py-2 text-xs font-mono uppercase tracking-[0.12em] bg-[var(--accent)] text-[#0E0E0D] font-medium rounded-full hover:bg-[var(--accent-hover)] transition-colors"
           >
             WhatsApp
           </a>

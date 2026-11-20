@@ -42,7 +42,7 @@ export function Hero() {
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-3 px-7 py-3.5 bg-[var(--ink)] text-[var(--paper)] text-sm font-medium rounded-full hover:bg-[var(--accent)] transition-colors duration-300"
+                className="inline-flex items-center gap-3 px-7 py-3.5 bg-[var(--accent)] text-[#0E0E0D] text-sm font-semibold rounded-full hover:bg-[var(--accent-hover)] transition-colors duration-300"
               >
                 <span>View Selected Work</span>
                 <span aria-hidden="true" className="text-base leading-none">
@@ -51,7 +51,7 @@ export function Hero() {
               </a>
               <a
                 href={`mailto:${portfolioData.email}`}
-                className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--rule-strong)] text-[var(--ink)] text-sm font-medium rounded-full hover:border-[var(--ink)] hover:bg-[var(--surface)] transition-colors duration-300"
+                className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--rule-strong)] text-[var(--ink)] text-sm font-medium rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors duration-300"
               >
                 <span>Get in Touch</span>
               </a>

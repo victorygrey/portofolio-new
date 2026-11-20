@@ -95,7 +95,7 @@ export function CapabilitiesSection() {
                   {items.map((skill) => (
                     <span
                       key={skill.name}
-                      className="px-3.5 py-1.5 text-xs font-medium text-[var(--ink)] bg-[var(--surface-elevated)] border border-[var(--rule)] hover:border-[var(--ink)] transition-colors"
+                      className="px-3.5 py-1.5 text-xs font-medium text-[var(--ink)] bg-[var(--surface)] border border-[var(--rule)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
                     >
                       {skill.name}
                     </span>

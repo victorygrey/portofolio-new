@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#F5F2EB",
+  themeColor: "#0E0E0D",
 };
 
 export default function RootLayout({
@@ -62,7 +62,7 @@ export default function RootLayout({
       lang="en"
       className={`${instrumentSerif.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
-      <body className="font-sans antialiased bg-[var(--paper)] text-[var(--ink)] selection:bg-[#B8432E]/15 selection:text-[var(--ink)]">
+      <body className="font-sans antialiased bg-[var(--paper)] text-[var(--ink)] selection:bg-[#D4A373]/25 selection:text-[var(--ink)]">
         {children}
       </body>
     </html>
